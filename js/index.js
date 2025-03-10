@@ -37,6 +37,23 @@ ul.onclick = function (event) {
   }
 };
 
+//app button (scrolling)
+window.addEventListener('scroll', function() {
+  const scrollPosition = window.scrollY;
+  const scrollUpButton = document.getElementById('scrollUp');
+
+  if (scrollPosition > 200) { // Mostra il pulsante dopo 200px di scrolling
+    scrollUpButton.style.display = 'block';
+  } else {
+    scrollUpButton.style.display = 'none';
+  }
+});
+
+document.getElementById('scrollUp').addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+
 //app ui (scrolling)
 $(window).scroll(function () {
   var requiredOffset = 100;
