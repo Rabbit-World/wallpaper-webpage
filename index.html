@@ -180,9 +180,9 @@
               <div data-translatable>Synthwave</div>
             </li>
 
-            <li id="clouds" class="library">
+            <li id="rabbit" class="library">
               <img 
-				alt="cloud wallpaper"
+				alt="rabbit hole wallpaper"
 				src="assets/rabbit_preview.webp"
 				width="600"
 				height="400"
@@ -454,6 +454,71 @@
                   onchange="setProperty('u_fog',this.checked ? true : false)"
                 />
                 <label class="checkbox-label" data-translatable>Fog // Nebbia // Brouillard // Nebel // Niebla // Ceță // कोहरा // 霧 // 안개 // Névoa // Туман // Dimma // Мъгла // Mlha // Tåge // Mist // Sumu // Ομίχλη // Kabut // Kabut // Mgła // Névoa // Hmla // 雾 // 霧</label>
+              </div>
+            </div>
+			
+            <div id="ui-app-customise-controls-rabbit" style="display: none">
+              <!-- <p class="slider-label">Layers</p>
+              <input
+                autocomplete="off"
+                style="background-size: 25% 100%"
+                type="range"
+                min="0"
+                max="200"
+                value="50"
+                step="1"
+                oninput="setProperty('u_layers',this.value)"
+              /> -->
+              <p class="slider-label" data-translatable>Depth // Profondità // Profondeur // Tiefe // Profundidad // Adâncime // गहराई // 深さ // 깊이 // Profundidade // Глубина // Djup // Дълбочина // Hloubka // Dybde // Diepte // Syvyys // Βάθος // Kedalaman // Kedalaman // Głębokość // Profundidade // Hĺbka // 深度 // 深度</p>
+              <input
+                autocomplete="off"
+                style="background-size: 50% 100%"
+                type="range"
+                min="0"
+                max="2"
+                value="1.0"
+                step="0.01"
+                oninput="setProperty('u_depth',this.value)"
+              />
+              <p class="slider-label" data-translatable>Width // Larghezza // Largeur // Breite // Anchura // Lățime // चौड़ाई // 幅 // 너비 // Largura // Ширина // Bredd // Ширина // Šířka // Bredde // Breedte // Leveys // Πλάτος // Lebar // Lebar // Szerokość // Largura // Šírka // 宽度 // 寬度</p>
+              <input
+                autocomplete="off"
+                style="background-size: 15% 100%"
+                type="range"
+                min="0"
+                max="2"
+                value="0.3"
+                step="0.01"
+                oninput="setProperty('u_width',this.value)"
+              />
+              <p class="slider-label" data-translatable>Speed // Velocità // Vitesse // Geschwindigkeit // Velocidad // Viteză // गति // 速度 // 속도 // Velocidade // Скорость // Hastighet // Скорост // Rychlost // Fart // Snelheid // Nopeus // Ταχύτητα // Kecepatan // Kelajuan // Prędkość // Velocidade // Rýchlosť // 速度 // 速度</p>
+              <input
+                autocomplete="off"
+                style="background-size: 30% 100%"
+                type="range"
+                min="0"
+                max="2"
+                value="0.6"
+                step="0.01"
+                oninput="setProperty('u_speed',this.value)"
+              />
+              <br />
+              <div class="dropdown">
+                <button class="dropbtn" data-translatable>Change background // Cambia sfondo // Changer l'arrière-plan // Hintergrund ändern // Cambiar fondo // Schimba fundalul // पृष्ठभूमि बदलें // 背景を変更する // 배경 변경 // Alterar fundo // Изменить фон // Ändra bakgrund // Промени фона // Změnit pozadí // Ændre baggrund // Verander achtergrond // Vaihda tausta // Αλλάξετε το φόντο // Ubah latar belakang // Ubah latar belakang // Zmień tło // Alterar fundo // Zmeniť pozadie // 更改背景 // 更改背景</button>
+                <div class="dropdown-content">
+                  <a onclick="setTexture('u_tex0', 'media/snow_tree.webp')">Trees.jpg</a>
+                  <a onclick="setTexture('u_tex0', 'media/snow_landscape.webp')">Landscape.jpg</a>
+                  <a onclick="openFilePicker()" data-translatable>Custom // Personalizzato // Personnalisé // Anpassen // Personalizado // Personalizat // अनुकूलित // カスタム // 맞춤형 // Personalizado // Настроенный // Anpassad // Настроен // Přizpůsobený // Tilpasset // Aangepast // Mukautettu // Προσαρμοσμένο // Kustom // Kustom // Dostosowany // Personalizado // Prispôsobený // 定制 // 定製</a>
+                </div>
+              </div>
+              <div>
+                <input
+                  autocomplete="off"
+                  type="checkbox"
+                  checked
+                  onchange="setProperty('u_post_processing',this.checked ? true : false)"
+                />
+                <label class="checkbox-label" data-translatable>Post processing // Elaborazione post // Traitement postérieur // Nachbearbeitung // Procesamiento posterior // Prelucrare post // पोस्ट प्रोसेसिंग // ポストプロセッシング // 후처리 // Pós-processamento // Постобработка // Efterbearbetning // Постобработка // Postzpracování // Efterbehandling // Nabewerking // Jälkikäsittely // Μετα-επεξεργασία // Pascaproses // Pascaproses // Przetwarzanie post // Pós-processamento // Postprocessing // 后期处理 // 後期處理</label>
               </div>
             </div>
           </div>
