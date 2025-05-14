@@ -680,15 +680,7 @@
   <script type="module" src="js/controls.js"></script>
   <script type="module" src="js/script.js"></script>
   <script type="module" src="js/index.js"></script>
-  <script>
-    if (window.location.href.indexOf("https://rabbit-world.github.io/wallpaper-webpage/") > -1) {
-      let script = document.createElement("script");
-      script.setAttribute("src", "//gc.zgo.at/count.js");
-      script.setAttribute("data-goatcounter", "https://rocksdanister.goatcounter.com/count");
-      script.setAttribute("async", "");
-      document.body.appendChild(script);
-    }
-  </script>
+
   <!--================== TRANSLATIONS ==================-->
     <script src="js/dom-i18n.js"></script>
 	<script>
@@ -847,37 +839,6 @@
 			changeLanguage(finalLang);
 			
 		};
-		
-		// Funzione per aggiornare i link al carrello in base alla lingua
-		function updateLanguageLink(language) {
-			const links = {
-				'en': 'https://checkout.rabbit.tech/checkouts/co/e0dd6faf6485f0e5e891fa87f7b7d5fb?auto_redirect=false&edge_redirect=true&key=&locale=en&skip_shop_pay=true',
-				'it': 'https://checkout.rabbit.tech/checkouts/co/092b6df5d9a13fbfdb17710de4ebca6d?auto_redirect=false&edge_redirect=true&key=&locale=it&skip_shop_pay=true',
-				'fr': 'https://checkout.rabbit.tech/checkouts/co/22f0dc82090d79d95c8de6bbd30e3409?auto_redirect=false&edge_redirect=true&key=&locale=fr&skip_shop_pay=true',
-				'de': 'https://checkout.rabbit.tech/checkouts/co/e140bfc775684cd02278dbf53a285a58?auto_redirect=false&edge_redirect=true&key=&locale=de&skip_shop_pay=true',
-				'es': 'https://checkout.rabbit.tech/checkouts/co/e06737ffd1bd8dbf80e0027820d2200f?auto_redirect=false&edge_redirect=true&key=&locale=es&skip_shop_pay=true',
-				'ro': 'https://checkout.rabbit.tech/checkouts/co/e140bfc775684cd02278dbf53a285a58?auto_redirect=false&edge_redirect=true&key=&locale=ro&skip_shop_pay=true',
-				'hi': 'https://checkout.rabbit.tech/checkouts/co/e140bfc775684cd02278dbf53a285a58?auto_redirect=false&edge_redirect=true&key=&locale=hi&skip_shop_pay=true',
-				'ja': 'https://checkout.rabbit.tech/checkouts/co/e140bfc775684cd02278dbf53a285a58?auto_redirect=false&edge_redirect=true&key=&locale=ja&skip_shop_pay=true',
-				'ko': 'https://checkout.rabbit.tech/checkouts/co/e140bfc775684cd02278dbf53a285a58?auto_redirect=false&edge_redirect=true&key=&locale=ko&skip_shop_pay=true',
-				'br': 'https://checkout.rabbit.tech/checkouts/co/e140bfc775684cd02278dbf53a285a58?auto_redirect=false&edge_redirect=true&key=&locale=en&skip_shop_pay=true',
-				'ru': 'https://checkout.rabbit.tech/checkouts/co/e140bfc775684cd02278dbf53a285a58?auto_redirect=false&edge_redirect=true&key=&locale=ru&skip_shop_pay=true',
-				'sv': 'https://checkout.rabbit.tech/checkouts/co/e140bfc775684cd02278dbf53a285a58?auto_redirect=false&edge_redirect=true&key=&locale=sv&skip_shop_pay=true',
-				'bg': 'https://checkout.rabbit.tech/checkouts/co/e140bfc775684cd02278dbf53a285a58?auto_redirect=false&edge_redirect=true&key=&locale=bg&skip_shop_pay=true',
-				'cs': 'https://checkout.rabbit.tech/checkouts/co/e140bfc775684cd02278dbf53a285a58?auto_redirect=false&edge_redirect=true&key=&locale=cs&skip_shop_pay=true',
-				'da': 'https://checkout.rabbit.tech/checkouts/co/e140bfc775684cd02278dbf53a285a58?auto_redirect=false&edge_redirect=true&key=&locale=da&skip_shop_pay=true',
-				'nl': 'https://checkout.rabbit.tech/checkouts/co/e140bfc775684cd02278dbf53a285a58?auto_redirect=false&edge_redirect=true&key=&locale=nl&skip_shop_pay=true',
-				'fi': 'https://checkout.rabbit.tech/checkouts/co/e140bfc775684cd02278dbf53a285a58?auto_redirect=false&edge_redirect=true&key=&locale=fi&skip_shop_pay=true',
-				'el': 'https://checkout.rabbit.tech/checkouts/co/e140bfc775684cd02278dbf53a285a58?auto_redirect=false&edge_redirect=true&key=&locale=el&skip_shop_pay=true',
-				'id': 'https://checkout.rabbit.tech/checkouts/co/e140bfc775684cd02278dbf53a285a58?auto_redirect=false&edge_redirect=true&key=&locale=id&skip_shop_pay=true',
-				'ms': 'https://checkout.rabbit.tech/checkouts/co/e140bfc775684cd02278dbf53a285a58?auto_redirect=false&edge_redirect=true&key=&locale=ms&skip_shop_pay=true',
-				'pl': 'https://checkout.rabbit.tech/checkouts/co/e140bfc775684cd02278dbf53a285a58?auto_redirect=false&edge_redirect=true&key=&locale=pl&skip_shop_pay=true',
-				'pt': 'https://checkout.rabbit.tech/checkouts/co/97475069f4e66225873e1123620f8195?auto_redirect=false&edge_redirect=true&key=&locale=pt-br&skip_shop_pay=true',
-				'sk': 'https://checkout.rabbit.tech/checkouts/co/3414f4fcbdf4e311660a56568629d0e5?auto_redirect=false&edge_redirect=true&key=&locale=sk&skip_shop_pay=true',
-				'cn': 'https://checkout.rabbit.tech/checkouts/co/e140bfc775684cd02278dbf53a285a58?auto_redirect=false&edge_redirect=true&key=&locale=zh-CN&skip_shop_pay=true',
-				'tw': 'https://checkout.rabbit.tech/checkouts/co/e140bfc775684cd02278dbf53a285a58?auto_redirect=false&edge_redirect=true&key=&locale=zh-TW&skip_shop_pay=true'
-			}
-			;
 			
 			const languageLink = document.getElementById('languageLink');
 			if (languageLink) {
