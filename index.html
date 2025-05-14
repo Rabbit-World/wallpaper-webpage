@@ -677,10 +677,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.151.3/three.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js"></script>
   <!-- load in this order -->
-  <script type="module" src="js/controls.js"></script>
-  <script type="module" src="js/script.js"></script>
-  <script type="module" src="js/index.js"></script>
-
+  <script src="js/controls.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/index.js"></script>
+  <script>
+    if (window.location.href.indexOf("https://rocksdanister.com/lively/") > -1) {
+      let script = document.createElement("script");
+      script.setAttribute("src", "//gc.zgo.at/count.js");
+      script.setAttribute("data-goatcounter", "https://rocksdanister.goatcounter.com/count");
+      script.setAttribute("async", "");
+      document.body.appendChild(script);
+    }
+  </script>
   <!--================== TRANSLATIONS ==================-->
     <script src="js/dom-i18n.js"></script>
 	<script>
